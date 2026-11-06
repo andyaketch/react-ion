@@ -10,9 +10,9 @@ function App() {
         <header>
           <nav id='navbar'>
             <ul>
-              <li>Home</li>
-              <li>Contacts</li>
-              <li>About</li>
+              <li><a href="#home"></a>Home</li>
+              <li><a href="contacts"></a>Contacts</li>
+              <li><a href="about"></a>About</li>
             </ul>
           </nav>
         </header>
