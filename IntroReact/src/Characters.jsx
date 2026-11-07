@@ -1,3 +1,4 @@
+import CharacterCard from "./CharacterCard";
 export const xters = [
   {
     id: 1,
@@ -44,21 +45,24 @@ export const xters = [
   },
 ];
 
+
+
 function Characters() {
-  return (
-    <>
-      {xters.map((xter) => {
-        return (
-          <div key={xter.id}>
-            <img src={xter.image} alt={xter.name} />
-            <h2>{xter.name}</h2>
-            <h3>{xter.role}</h3>
-            <p>{xter.description}</p>
-          </div>
-        );
-      })}
-    </>
-  );
+    return (
+        <>
+            {xters.map((xter) => {
+                return (
+                    <CharacterCard
+                        key={xter.id}
+                        name={xter.name}
+                        role={xter.role}
+                        image={xter.image}
+                        description={xter.description}
+                    />
+                );
+            })}
+        </>
+    );
 }
 
 export default Characters;
