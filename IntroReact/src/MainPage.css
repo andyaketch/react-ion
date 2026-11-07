@@ -1,0 +1,14 @@
+#mainpage {
+  padding: 3rem 4rem;
+  box-shadow: inset;
+}
+#mainpage h2 {
+  text-align: center;
+}
+#story {
+    flex-direction: column;
+  padding: 2rem 4rem;
+  box-shadow: 8px -14px 36px -5px rgba(255, 0, 0, 1);
+  -webkit-box-shadow: 8px -14px 36px -5px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 8px -14px 36px -5px rgba(255, 0, 0, 1);
+}

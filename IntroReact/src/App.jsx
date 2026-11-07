@@ -1,18 +1,15 @@
 import Header from './Header'
+import MainPage from './MainPage'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-        <Header/>
-      <section className='card'>
-        <article>
-         <h3>Avatar:Seven Havens</h3>
-         <p>A new story about twin avatars</p>
-        </article>
-      </section>
-    </>
+   <>
+   <Header/>
+   <MainPage/>
+   </>
+
   )
 }
 

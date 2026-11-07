@@ -2,7 +2,8 @@ import './Header.css'
 
 function Header (){
     return(
-              <nav id='navbar'>
+      
+            <nav id='navbar'>
             <ul>
               <li><a href="#home"></a>Home</li>
               <li><a href="contacts"></a>Contacts</li>
