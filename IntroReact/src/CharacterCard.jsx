@@ -1,3 +1,7 @@
+import './CharacterCard.jsx'
+
+
+
 function CharacterCard (props){
     return(
 <div className="character-card">

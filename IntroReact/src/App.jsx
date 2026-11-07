@@ -1,5 +1,6 @@
 import Header from './Header'
 import MainPage from './MainPage'
+import Characters from './Characters'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
    <>
    <Header/>
    <MainPage/>
+   <Characters/>
    </>
 
   )
