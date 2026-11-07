@@ -2,6 +2,8 @@ import CharacterCard from "./CharacterCard";
 import paviImage from "./assets/Pavi.webp";
 import nishaImage from "./assets/Nisha.webp";
 import agamImage from "./assets/Agam.webp";
+import jaeImage from "./assets/Jae.webp";
+import karthikImage from "./assets/Karthik.webp";
 import { useState } from "react";
 
 export const xters = [
@@ -28,7 +30,7 @@ export const xters = [
     name: "Jae",
     role: "Mentor",
     element: "Airbending",
-    image: "/images/jae.jpg",
+    image: jaeImage,
     description: "An important companion who helps guide Pavi on her journey.",
   },
   {
@@ -36,7 +38,7 @@ export const xters = [
     name: "Karthik",
     role: "Commander",
     element: "Earthbending",
-    image: "/images/karthik.jpg",
+    image: karthikImage,
     description:
       "A commander connected to the events surrounding Pavi and Nisha.",
   },
@@ -51,18 +53,20 @@ export const xters = [
 ];
 
 
-
 function Characters() {
     const [searchTerm, setSearchTerm] = useState("");
+
     return (
-        
         <div className="characters-container">
+
+            <input
+                type="text"
+                placeholder="Search characters..."
+                onChange={(event) => setSearchTerm(event.target.value)}
+            />
+
             {xters.map((xter) => {
                 return (
-                    <input
-  type="text"
-  placeholder="Search characters..."
-/>
                     <CharacterCard
                         key={xter.id}
                         name={xter.name}
@@ -72,6 +76,7 @@ function Characters() {
                     />
                 );
             })}
+
         </div>
     );
 }
